@@ -6,9 +6,9 @@
     <groupId>io.github.drofmij</groupId>
     <artifactId>drofmij-io</artifactId>
     <name>drofmij-io</name>
-    <version>0.1-snapshot</version>
+    <version>0.2-snapshot</version>
     <packaging>jar</packaging>
-    <description>simple java io https://github.com/drofmij/drofmij-io</description>
+    <description>simple java io utils https://github.com/drofmij/drofmij-io</description>
     <url>https://github.com/drofmij/drofmij-io</url>
     <developers>
         <developer>
@@ -89,7 +89,7 @@
                 <configuration>
                     <serverId>ossrh</serverId>
                     <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                    <autoReleaseAfterClose>false</autoReleaseAfterClose>
+                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
                 </configuration>
             </plugin>
             <plugin>
@@ -118,6 +118,8 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>11</maven.compiler.release>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
     </properties>
     <dependencies>
         <dependency>
