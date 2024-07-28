@@ -2,7 +2,6 @@ package io.github.drofmij.io;
 
 import java.io.*;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 /**
@@ -17,9 +16,8 @@ public class IOTools {
      *
      * @param is InputStream to read from
      * @return buffered reader for inputstream
-     * @throws IOException if an I/O error occurs during reading.
      */
-    public static BufferedReader bread(InputStream is) throws IOException {
+    public static BufferedReader bread(InputStream is) {
         InputStreamReader instr = new InputStreamReader(is);
         BufferedReader bread = new BufferedReader(instr);
         return bread;
