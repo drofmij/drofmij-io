@@ -6,7 +6,7 @@
     <groupId>io.github.drofmij</groupId>
     <artifactId>drofmij-io</artifactId>
     <name>drofmij-io</name>
-    <version>0.2-snapshot</version>
+    <version>0.2-SNAPSHOT</version>
     <packaging>jar</packaging>
     <description>simple java io utils https://github.com/drofmij/drofmij-io</description>
     <url>https://github.com/drofmij/drofmij-io</url>
@@ -95,7 +95,7 @@
             <plugin>
                 <groupId>org.owasp</groupId>
                 <artifactId>dependency-check-maven</artifactId>
-                <version>9.2.0</version>
+                <version>10.0.3</version>
                 <configuration>
                     <assemblyAnalyzerEnabled>false</assemblyAnalyzerEnabled>
                     <failBuildOnCVSS>8</failBuildOnCVSS>
@@ -110,6 +110,22 @@
             </plugin>
         </plugins>
     </build>
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.owasp</groupId>
+                <artifactId>dependency-check-maven</artifactId>
+                <version>10.0.3</version>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>aggregate</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+        </plugins>
+    </reporting>
     <profiles>
         <profile>
             <id>release</id>
@@ -135,20 +151,4 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <reporting>
-        <plugins>
-            <plugin>
-                <groupId>org.owasp</groupId>
-                <artifactId>dependency-check-maven</artifactId>
-                <version>9.2.0</version>
-                <reportSets>
-                    <reportSet>
-                        <reports>
-                            <report>aggregate</report>
-                        </reports>
-                    </reportSet>
-                </reportSets>
-            </plugin>
-        </plugins>
-    </reporting>
 </project>

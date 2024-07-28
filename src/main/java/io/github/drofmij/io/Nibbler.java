@@ -9,8 +9,9 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 /**
- * Nibbler handles reading a file or input stream with a buffered reader one
- * line at a time
+ * Nibbler handles reading a file or input stream with a buffered reader one line at a time, each line will be handled
+ * by your implementation of handleLine(), implements Closeable to allow try with resources.
+ * NOTE: java.nio.file.Files.lines() is very similar but returns a Stream.
  *
  * @author drofmij
  */
