@@ -18,6 +18,11 @@ import java.io.InputStreamReader;
 public abstract class Nibbler implements Closeable {
 
     /**
+     * if true continue to read file line by line, if false stop reading.
+     */
+    private boolean process = true;
+
+    /**
      * name of the file to nibble
      */
     private String filename;
@@ -105,6 +110,9 @@ public abstract class Nibbler implements Closeable {
             String line;
             while ((line = br.readLine()) != null) {
                 handleLine(line);
+                if(!process) {
+                    break;
+                }
             }
         }
     }
