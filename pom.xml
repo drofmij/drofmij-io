@@ -6,7 +6,7 @@
     <groupId>io.github.drofmij</groupId>
     <artifactId>drofmij-io</artifactId>
     <name>drofmij-io</name>
-    <version>0.2-SNAPSHOT</version>
+    <version>0.2.0.2</version>
     <packaging>jar</packaging>
     <description>simple java io utils https://github.com/drofmij/drofmij-io</description>
     <url>https://github.com/drofmij/drofmij-io</url>
