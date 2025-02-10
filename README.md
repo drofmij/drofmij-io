@@ -1,5 +1,11 @@
 # drofmij-io
  ** simple java io utils**
  
-Releases will be in maven central soon.
-https://search.maven.org/artifact/io.github.drofmij/drofmij-io/[ThreadLord-deploy.txt](..%2FThreadLord-deploy.txt)
+### Releases are in maven central: https://search.maven.org/artifact/io.github.drofmij/drofmij-io/
+
+    <dependency>
+      <groupId>io.github.drofmij</groupId>
+      <artifactId>drofmij-io</artifactId>
+      <version>0.2.0.2</version>
+    </dependency>
+
