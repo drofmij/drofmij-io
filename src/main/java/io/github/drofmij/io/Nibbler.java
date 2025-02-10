@@ -20,7 +20,7 @@ public abstract class Nibbler implements Closeable {
     /**
      * if true continue to read file line by line, if false stop reading.
      */
-    private boolean process = true;
+    protected boolean process = true;
 
     /**
      * name of the file to nibble
